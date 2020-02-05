@@ -25,13 +25,18 @@ export class PastrieService {
 
   public getPastrieById(id: number){
     const url = `${this.pastriesUrl}/${id}`;
-    console.log({url});
     return this.http.get<Pastrie>(url);
+  }
+
+  public removePastrieById(id: number){
+    const url = `${this.pastriesUrl}/${id}`;
+    return this.http.delete(url);
   }
 
   public insertPastrieToDB(pastrie: Pastrie){
     return this.http.post<Pastrie>(this.pastriesUrl, pastrie);
   }
+
   
 
 }

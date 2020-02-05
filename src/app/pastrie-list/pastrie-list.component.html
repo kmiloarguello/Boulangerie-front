@@ -11,7 +11,7 @@
           <p class="product-name">{{ pastrie.name  | uppercase }}</p>
           <p class="product-price">{{ pastrie.price }} €</p>
           <a id="add-product" class="plus" routerLink="/pastries/{{pastrie.id}}">En savoir plus</a>
-          <a id="remove-product" class="moins" routerLink="/pastries/{{pastrie.id}}"><img src="assets/trash.svg" alt="Remove item" /></a>
+          <a id="remove-product" class="moins" (click)="removePastrieById(pastrie.id)"><img src="assets/trash.svg" alt="Remove item" /></a>
         </li>
       </ul>
     </div>

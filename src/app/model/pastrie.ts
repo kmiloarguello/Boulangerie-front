@@ -3,5 +3,6 @@ export class Pastrie {
     name: string;
     type: string;
     price: Number;
+    image: string;
     description: string;
 }

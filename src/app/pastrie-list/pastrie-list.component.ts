@@ -20,6 +20,13 @@ export class PastrieListComponent implements OnInit {
     });
   }
 
+  removePastrieById(id: number){
+    this.pastrieService.removePastrieById(id)
+      .subscribe(data => {
+        location.reload(false);
+      })
+  }
+
   
 
 }

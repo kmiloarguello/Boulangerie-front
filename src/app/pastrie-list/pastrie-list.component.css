@@ -84,6 +84,7 @@
     transition: all ease .1s;
     text-align: center;
     height: 40px;
+    cursor: pointer;
 }
 
 .plus:hover{
@@ -99,6 +100,7 @@
     transition: all ease .1s;
     text-align: center;
     height: 40px;
+    cursor: pointer;
 }
 
 .moins:hover{

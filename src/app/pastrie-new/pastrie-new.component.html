@@ -1,28 +1,39 @@
-<div class="card my-5">
-  <div class="card-body">
-    <form (ngSubmit)="onSubmit()" #userForm="ngForm">
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" [(ngModel)]="user.name" 
-          class="form-control"
-          id="name"
-          name="name"
-          placeholder="Enter your name"
-          required #name="ngModel">
+<div class="container">
+  <div class="wrap">
+    <div class="contenedor-formulario">
+      <div class="formulario">
+        <form (ngSubmit)="onSubmit()" #pastriesForm="ngForm">
+    
+          <div class="input-group">
+            <input type="text" id="name" name="name" [(ngModel)]="pastrie.name" #name="ngModel" />
+            <label class="label" for="name">Nom</label>
+          </div>
+    
+          <div class="input-group">
+            <input type="text" id="type" name="type" [(ngModel)]="pastrie.type" #type="ngModel" required />
+            <label class="label" for="type">Type</label>
+          </div>
+    
+          <div class="input-group">
+            <input type="text" id="price" name="price" [(ngModel)]="pastrie.price" #price="ngModel" required />
+            <label class="label" for="price">Prix</label>
+          </div>
+    
+          <div class="input-group">
+            <input type="text" id="image" name="image" [(ngModel)]="pastrie.image" #image="ngModel" required />
+            <label class="label" for="image">Image</label>
+          </div>
+    
+          <div class="input-group">
+            <input type="text" id="description" name="image" [(ngModel)]="pastrie.description" #description="ngModel" required />
+            <label class="label" for="description">Image</label>
+          </div>
+    
+          <button type="submit" [disabled]="!pastriesForm.form.valid" 
+            class="btn btn-info">Submit</button>
+        </form>
       </div>
-      <div [hidden]="!name.pristine" class="alert alert-danger">Name is required</div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="text" [(ngModel)]="user.email" 
-          class="form-control"
-          id="email"
-          name="email"
-          placeholder="Enter your email address"
-          required #email="ngModel">
-        <div [hidden]="!email.pristine" class="alert alert-danger">Email is required</div>
-      </div>
-      <button type="submit" [disabled]="!userForm.form.valid" 
-        class="btn btn-info">Submit</button>
-    </form>
+    </div>
   </div>
 </div>
+
