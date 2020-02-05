@@ -1,25 +1,22 @@
-<div class="card my-5">
-  <div class="card-body">
-    <h3>Deserts</h3>
-    <table class="table table-bordered table-striped">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Image</th>
-          <th scope="col">Name</th>
-          <th scope="col">Type</th>
-          <th scope="col">Detalles</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let pastrie of pastries">
-          <td>{{ pastrie.id }}</td>
-          <td><img width="100" src={{pastrie.image}} /></td>
-          <td>{{ pastrie.name }}</td>
-          <td>{{ pastrie.type }}</td>
-          <td><a routerLink="/pastries/{{pastrie.id}}">Ver más</a></td>
-        </tr>
-      </tbody>
-    </table>
+<div class="container">
+  <img width="100" id="logo-boulangerie" src="assets/logo.png" alt="Logo Boulangerie">
+  <div class="card-section">
+    <div class="head-card">
+      <h3>Notre menu</h3>
+    </div>
+    <div class="body-card">
+      <ul class="list-pastries">
+        <li *ngFor="let pastrie of pastries">
+          <img class="thumb-pastrie" src={{pastrie.image}} alt={{pastrie.name}} />
+          <p class="product-name">{{ pastrie.name  | uppercase }}</p>
+          <p class="product-price">{{ pastrie.price }} €</p>
+          <a id="add-product" class="plus" routerLink="/pastries/{{pastrie.id}}">En savoir plus</a>
+          <a id="remove-product" class="moins" routerLink="/pastries/{{pastrie.id}}"><img src="assets/trash.svg" alt="Remove item" /></a>
+        </li>
+      </ul>
+    </div>
+    <div class="bottom-card">
+      <a class="button" routerLink="/pastries/new">Ajouter un produit</a>
+    </div>
   </div>
 </div>

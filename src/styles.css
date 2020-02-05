@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root{
+      --darkColor: #15192a;
+      --lightColor: #fff;
+      --grayColor: #ccc;
+      --grayColorTrans: rgba(255,255,255,0.7);
+      --blueColor: #3498db;
+      --yellowColor: #ffcc08;
+      --redColor: #D32F2F;
+      --pinkColor: #ff7ca5;
+      --mainColor: #ff4a83;
+      --boxShadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+      --radius: 20px;
+  }
+  
+  body {
+    font-family: "Roboto", Arial;
+  }
+  
+  .button{
+    text-decoration: none;
+    width: 100%;
+    max-width: 300px;
+    background-color: var(--grayColorTrans);
+    color: var(--mainColor);
+    padding: 10px 20px;
+    border-radius: var(--radius);
+    transition: all ease .1s;
+    box-shadow: var(--boxShadow);
+}
+
+.button:hover{
+    box-shadow: var(--boxShadow);
+}

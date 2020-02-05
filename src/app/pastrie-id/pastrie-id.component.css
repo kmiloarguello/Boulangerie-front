@@ -1,0 +1,95 @@
+.container{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+.line-sup{
+    border-bottom: 1px solid var(--grayColor);
+    width: 100%;
+}
+
+.card-section{
+    width: 70%;
+    height: auto;
+    background-color: var(--lightColor);
+}
+
+.details{
+    display: grid;
+    grid-template-areas: 
+    "image name name"
+    "image type type"
+    "image price price"
+    "image plus remove"
+    "image description description";
+    grid-template-columns: 50% 1fr 1fr;
+    padding: 10px;
+    height: 100%;
+    grid-column-gap: 20px; 
+    max-height: 200px;
+}
+
+.list-pastries a{
+    align-self: center;
+}
+
+.thumb-pastrie{
+    grid-area: image;
+    width: 100%;
+    align-self: center;
+    border: 2px solid var(--grayColor);
+    padding: 10px;
+}
+.product-name{
+    grid-area: name;
+    font-weight: 700;
+    font-size: 2em;
+    align-self: center;
+}
+
+.product-type{
+    grid-area: type;
+    font-weight: 400;
+    font-size: 1em;
+    align-self: center;
+}
+.product-price{
+    font-size: 1.5em;
+    grid-area: price;
+    border-bottom: 1px solid var(--grayColor);
+    font-weight: 600;
+    align-self: center;
+}
+.plus-product{
+    grid-area: plus;
+}
+.remove-product{
+    grid-area: remove;
+}
+.product-description{
+    grid-area: description;
+    font-weight: 400;
+    font-size: 1em;
+    align-self: justify;
+}
+
+.plus{
+    font-size: .9em;
+    text-decoration: none;
+    width: 100%;
+    max-width: 300px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border: 2px solid black;
+    transition: all ease .1s;
+    text-align: center;
+    height: 45px;
+}
+
+.plus:hover{
+    background-color: white;
+    color: black;
+}

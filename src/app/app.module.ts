@@ -7,9 +7,13 @@ import { AppComponent } from './app.component';
 import { PastrieListComponent } from './pastrie-list/pastrie-list.component';
 import { PastrieService } from './service/pastrie-service.service';
 import { PastrieIdComponent } from './pastrie-id/pastrie-id.component';
+import { PastrieNewComponent } from './pastrie-new/pastrie-new.component';
+import { PastrieHomeComponent } from './pastrie-home/pastrie-home.component';
 
 const routes: Routes = [
+  { path: '', component: PastrieHomeComponent },
   { path: 'pastries', component: PastrieListComponent },
+  { path: 'pastries/new', component: PastrieNewComponent },
   { path: 'pastries/:id', component: PastrieIdComponent }
 ];
 
@@ -17,7 +21,9 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     PastrieListComponent,
-    PastrieIdComponent
+    PastrieIdComponent,
+    PastrieNewComponent,
+    PastrieHomeComponent
   ],
   imports: [
     BrowserModule,

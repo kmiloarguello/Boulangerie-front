@@ -1,5 +1,21 @@
-<div *ngIf="pastrie">
-  <h2>{{ pastrie.name | uppercase }} Details</h2>
-  <img [src]="pastrie.image">
-  <p>{{ pastrie.description }}</p>
+<div class="container">
+  
+  <img width="100" id="logo-boulangerie" src="assets/logo.png" alt="Logo Boulangerie">
+  <div class="line-sup"></div>
+  <div class="card-section">
+    <div class="body-card">
+        <div class="details" *ngIf="pastrie">
+          <img class="thumb-pastrie" src={{pastrie.image}} alt={{pastrie.name}} />
+          <p class="product-name">{{ pastrie.name  | uppercase }}</p>
+          <p class="product-type">{{ pastrie.type }}</p>
+          <p class="product-price">{{ pastrie.price }} €</p>
+          <a id="add-product" class="plus" routerLink="/pastries/{{pastrie.id}}">Mettre à jour</a>
+          <a id="remove-product" class="plus" routerLink="/pastries/{{pastrie.id}}">Suprimmer</a>
+          <p class="product-description">{{pastrie.description}}</p>
+        </div>
+    </div>
+    <div class="bottom-card">
+      <!-- <a class="button" routerLink="/pastries/new">Ajouter un produit</a> -->
+    </div>
+  </div>
 </div>
