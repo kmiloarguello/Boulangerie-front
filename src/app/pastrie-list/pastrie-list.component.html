@@ -1,0 +1,25 @@
+<div class="card my-5">
+  <div class="card-body">
+    <h3>Deserts</h3>
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Image</th>
+          <th scope="col">Name</th>
+          <th scope="col">Type</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let pastrie of pastries">
+          <td>{{ pastrie.id }}</td>
+          <td><img width="100" src={{pastrie.image}} /></td>
+          <td>{{ pastrie.name }}</td>
+          <td>{{ pastrie.type }}</td>
+          <td>{{ pastrie.description }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
