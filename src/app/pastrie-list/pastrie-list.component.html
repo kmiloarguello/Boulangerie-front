@@ -8,7 +8,7 @@
           <th scope="col">Image</th>
           <th scope="col">Name</th>
           <th scope="col">Type</th>
-          <th scope="col">Description</th>
+          <th scope="col">Detalles</th>
         </tr>
       </thead>
       <tbody>
@@ -17,7 +17,7 @@
           <td><img width="100" src={{pastrie.image}} /></td>
           <td>{{ pastrie.name }}</td>
           <td>{{ pastrie.type }}</td>
-          <td>{{ pastrie.description }}</td>
+          <td><a routerLink="/pastries/{{pastrie.id}}">Ver más</a></td>
         </tr>
       </tbody>
     </table>
