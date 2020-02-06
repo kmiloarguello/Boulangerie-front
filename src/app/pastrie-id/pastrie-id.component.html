@@ -10,7 +10,7 @@
           <p class="product-type">{{ pastrie.type }}</p>
           <p class="product-price">{{ pastrie.price }} €</p>
           <a id="add-product" class="plus" routerLink="/pastries/{{pastrie.id}}">Mettre à jour</a>
-          <a id="remove-product" class="plus" routerLink="/pastries/{{pastrie.id}}">Suprimmer</a>
+          <a id="remove-product" class="plus" (click)="removePastrieById(pastrie.id)">Suprimmer</a>
           <p class="product-description">{{pastrie.description}}</p>
         </div>
     </div>

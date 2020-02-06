@@ -3,8 +3,14 @@
     grid-template-rows: 1fr 1fr;
     justify-items: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
+    max-height: 100vh;
     background-color: var(--pinkColor);
+}
+
+#logo-boulangerie{
+  display: block;
+  margin: auto;
 }
 
 .wrap {
@@ -16,6 +22,7 @@
   .contenedor-formulario {
     width: 100%;
     padding: 50px;
+    margin-top: 20px;
     background-color: white;
     border-radius: var(--radius);
     color: var(--darkColor);
@@ -31,7 +38,7 @@
   }
   .contenedor-formulario .formulario .input-group input[type="text"],
   .contenedor-formulario .formulario .input-group input[type="email"],
-  .contenedor-formulario .formulario .input-group input[type="text2"] {
+  .contenedor-formulario .formulario .input-group input[type="number"] {
     font-family: "Roboto", Arial;
     font-size: 16px;
     color: var(--darkColor);
@@ -93,9 +100,9 @@
   }
 
   .contenedor-formulario .formulario input[type="submit"] {
-    background: var(--grayColorTrans);
+    background: var(--pinkColor);
     border: none;
-    color: var(--darkColor);
+    color: white;
     cursor: pointer;
     display: inline-block;
     font-family: "Roboto", Arial;
@@ -106,5 +113,5 @@
     transition: all 0.3s ease;
   }
   .contenedor-formulario .formulario input[type="submit"]:hover {
-    background: var(--lightColor);
+    background: var(--mainColor);
   }

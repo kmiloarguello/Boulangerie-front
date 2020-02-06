@@ -23,8 +23,11 @@ export class PastrieNewComponent implements OnInit {
   ngOnInit(){}
 
   onSubmit(){
+    
+    this.pastrie.id = Math.floor((Math.random() * 100) + 1);
+
     this.service.insertPastrieToDB(this.pastrie).subscribe(() => {
-      this.router.navigate(['/pastries']);
+       this.router.navigate(['/pastries']);
     })
   }
 }

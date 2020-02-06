@@ -16,7 +16,7 @@ export class PastrieService {
   private pastriesUrl : string;
 
   constructor(private http: HttpClient) { 
-    //this.pastriesUrl = 'http://127.0.0.1:8080/pastries';
+    // this.pastriesUrl = 'http://127.0.0.1:8080/pastries';
     this.pastriesUrl = 'https://boulangerie-back.herokuapp.com/pastries';
   }
 
@@ -36,6 +36,10 @@ export class PastrieService {
 
   public insertPastrieToDB(pastrie: Pastrie){
     return this.http.post<Pastrie>(this.pastriesUrl, pastrie);
+  }
+
+  public updatePastrie(pastrie: Pastrie){
+    return this.http.put<Pastrie>(this.pastriesUrl, pastrie);
   }
 
   
