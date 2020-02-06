@@ -14,7 +14,7 @@ import { switchMap } from 'rxjs/operators';
 })
 export class PastrieIdComponent implements OnInit {
 
-  private pastrie: Pastrie;
+  pastrie: Pastrie;
 
   constructor( private service: PastrieService ,private route: ActivatedRoute) { }
 

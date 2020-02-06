@@ -9,7 +9,7 @@ import { PastrieService } from '../service/pastrie-service.service';
 })
 export class PastrieListComponent implements OnInit {
 
-  private pastries: Pastrie[];
+  pastries: Pastrie[];
 
   constructor(private pastrieService: PastrieService) {
    }
