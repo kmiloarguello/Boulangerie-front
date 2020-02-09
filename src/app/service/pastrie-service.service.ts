@@ -16,8 +16,8 @@ export class PastrieService {
   private pastriesUrl : string;
 
   constructor(private http: HttpClient) { 
-    // this.pastriesUrl = 'http://127.0.0.1:8080/pastries';
-    this.pastriesUrl = 'https://boulangerie-back.herokuapp.com/pastries';
+    this.pastriesUrl = 'http://127.0.0.1:8080/pastries';
+    //this.pastriesUrl = 'https://boulangerie-back.herokuapp.com/pastries';
   }
 
   public getAllPastries(){
