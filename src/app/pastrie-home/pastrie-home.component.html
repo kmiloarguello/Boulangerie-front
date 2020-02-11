@@ -1,5 +1,129 @@
 <div class="container">
-  <img id="logo-boulangerie" src="assets/logo.png" alt="Logo Boulangerie">
+  <nav id="menu-boulangerie">
+    <img id="logo-boulangerie" src="assets/logo.png" alt="Logo Boulangerie" />
+    <ul id="main-menu" class="horizontal-list-4">
+      <li>
+        <a routerLink="/">Accueil</a>
+      </li>
+      <li>
+        <a routerLink="#how">A propos</a>
+      </li>
+      <li>
+        <a routerLink="/pastries">Découvrir</a>
+      </li>
+      <li>
+        <a routerLink="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <hr>
+  <section id="why-boulangerie">
+    <div class="content-why">
+      <h2>Boulangerie Fine - Fabiration traditionnelle</h2>
+      <h1>La Boulangerie</h1>
+      <ul class="horizontal-list-2">
+        <li>
+          <p><b>Horaires d'ouverture</b></p>
+          <p>de 6h45 à 19h30 du lundi au vendredi</p>
+          <p>Fermé les week-end</p>
+        </li>
+        <li>
+          <p><b>Votre Boulangerie à domicile</b></p>
+          <a routerLink="/pastries">Commander</a>
+          <p>Votre pain directement chez vous</p>
+        </li>
+      </ul>
+    </div>
+
+    <img class="bg-section" src="assets/boulangerie_port.png" alt="" />
+  </section>
+  <section id="how-boulangerie">
+    <div id="phrase" class="subsection">
+      <h1>
+        Je vous ferai un pain comme vous n'en avez jamais vu, et dans ce pain il
+        y aura de l'amour; et aussi beacu d'amitie.
+      </h1>
+      <img class="bg-section" src="assets/boulangerie_place.JPG" alt="" />
+    </div>
+    <!-- <div id="about" class="subsection">
+      <h2>
+        A propos
+      </h2>
+      <ul id="process" class="horizontal-list-3">
+        <li>
+          <img src="assets/logo.png" alt="" />
+          <h3>Première</h3>
+          <p>Description</p>
+        </li>
+        <li>
+          <img src="assets/logo.png" alt="" />
+          <h3>Première</h3>
+          <p>Description</p>
+        </li>
+        <li>
+          <img src="assets/logo.png" alt="" />
+          <h3>Première</h3>
+          <p>Description</p>
+        </li>
+      </ul>
+    </div> -->
+  </section>
+  <section id="what-boulangerie">
+    <ul class="products">
+      <!-- First Line  -->
+      <li class="desc-product">
+        <h3>Nos Boutiques</h3>
+        <a routerLink="/pastries">En savoir plus</a>
+      </li>
+      <li class="bg-product">
+        <img src="assets/boulangerie_product1.jpg" alt="" />
+      </li>
+      <li class="desc-product">
+        <h3>Produits et Créations</h3>
+        <a routerLink="/pastries">En savoir plus</a>
+      </li>
+      <!-- Second line -->
+      <li class="bg-product">
+        <img src="assets/boulangerie_product2.jpg" alt="" />
+      </li>
+      <li class="desc-product">
+        <h3>Découvrez notre histoire</h3>
+        <a>En savoir plus</a>
+      </li>
+      <li class="bg-product">
+        <img src="assets/boulangerie_product3.jpg" alt="" />
+      </li>
+      <!-- Third -->
+      <li class="desc-product">
+        <h3>Nos addresses</h3>
+        <a>En savoir plus</a>
+      </li>
+      <li class="bg-product">
+        <img src="assets/boulangerie_product4.jpg" alt="" />
+      </li>
+      <li class="desc-product">
+        <h3>Devenir artisan</h3>
+        <a>En savoir plus</a>
+      </li>
+    </ul>
+  </section>
+  <section id="contact">
+    <ul class="horizontal-list-3">
+      <li>
+        <a>Facebook</a>
+      </li>
+      <li>
+        <a>Instagram</a>
+      </li>
+      <li>
+        <a>Twitter</a>
+      </li>
+    </ul>
+    <div id="google-container">
+      <img src="assets/maps.jpg" />
+    </div>
+  </section>
+
   <div class="horizontal-buttons">
     <a class="button" routerLink="/pastries">Nos produits</a>
   </div>

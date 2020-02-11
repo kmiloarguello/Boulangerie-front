@@ -27,6 +27,4 @@ export class PastrieListComponent implements OnInit {
       })
   }
 
-  
-
 }

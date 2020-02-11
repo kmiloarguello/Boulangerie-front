@@ -1,9 +1,287 @@
-.container{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+.container {
+  /* display: grid;
+    grid-template-columns: minmax(auto, 90%);
     justify-items: center;
-    align-items: center;
-    height: 100vh;
-    background-color: var(--pinkColor);
+    align-items: center; */
+  /* height: 100vh; */
+  width: 90%;
+  display: block;
+  margin: auto;
+  position: relative;
+  /* background-color: var(--pinkColor); */
 }
 
+nav#menu-boulangerie {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+}
+
+nav#menu-boulangerie #logo-boulangerie {
+  width: 100%;
+  height: auto;
+}
+
+nav#menu-boulangerie #main-menu {
+  text-decoration: none;
+  margin: 0;
+  list-style: none;
+}
+
+#main-menu li {
+  align-self: center;
+  justify-self: center;
+}
+
+#main-menu li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+}
+#main-menu li a:hover{
+    text-decoration: overline;
+}
+
+/* SECTION 2 */
+
+section#why-boulangerie {
+  position: relative;
+}
+
+section#why-boulangerie .content-why {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  min-height: 500px;
+  max-height: 900px;
+}
+
+section#why-boulangerie h1 {
+  font-size: 3em;
+  text-align: center;
+  letter-spacing: 0.7em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  font-weight: 400;
+  align-self: center;
+  color: white;
+}
+
+section#why-boulangerie h2 {
+  font-size: 1.3em;
+  text-align: center;
+  align-self: center;
+  color: white;
+  font-weight: 300;
+}
+
+section#why-boulangerie ul {
+  grid-gap: 50px;
+  list-style: none;
+  align-self: center;
+}
+
+section#why-boulangerie ul li {
+  text-align: center;
+}
+
+section#why-boulangerie ul li p{
+    color: white;
+    font-weight: 300;
+}
+section#why-boulangerie ul li a{
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    max-width: 250px;
+    background-color: rgba(255,255,255,0);
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    transition: all ease .1s;
+    cursor: pointer;
+    display: block;
+    margin: 5px auto;
+}
+
+section#why-boulangerie ul li a:hover{
+    background-color: rgba(255,255,255,1);
+    color: black;
+}
+
+section#why-boulangerie .bg-section {
+  height: 100%;
+}
+
+/* Section HOW */
+section#how-boulangerie {
+  position: relative;
+  display: block;
+}
+
+section#how-boulangerie #phrase {
+  position: relative;
+  display: grid;
+  grid-template-areas: ". phrase";
+  grid-template-columns: 30% 1fr;
+  height: 100%;
+  min-height: 500px;
+  max-height: 800px;
+  overflow: hidden;
+}
+
+section#how-boulangerie #phrase h1 {
+  grid-area: phrase;
+  padding-right: 50px;
+  align-self: center;
+  text-align: right;
+  font-weight: 300;
+  font-size: 3em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+section#how-boulangerie #phrase .bg-section{
+    top: -40%;
+    opacity: .4;
+}
+
+section#how-boulangerie #about {
+  position: relative;
+  display: block;
+}
+
+
+
+/* Section WHAT */
+
+section#what-boulangerie {
+  position: relative;
+}
+
+section#what-boulangerie ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+section#what-boulangerie ul .desc-product {
+  /* background-color: #f8ecd2; */
+  margin: auto;
+  width: 100%;
+  padding: 20px;
+}
+
+section#what-boulangerie ul .desc-product h3 {
+    text-align: center;
+    line-height: 2;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+section#what-boulangerie ul .desc-product a {
+    display: block;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    max-width: 300px;
+    background-color: rgba(255,255,255,0);
+    border: 2px solid black;
+    color: black;
+    padding: 10px 20px;
+    transition: all ease .1s;
+    cursor: pointer;
+}
+section#what-boulangerie ul .desc-product a:hover {
+    background-color: rgba(0,0,0,1);
+    color: white;
+}
+section#what-boulangerie ul .bg-product {
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+section#what-boulangerie ul .bg-product img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* Section CONTACT */
+section#contact{
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 50px;
+    grid-gap: 20px;
+}
+
+section#contact ul{
+    list-style: none;
+    align-self: center;
+    grid-gap: 5px;
+}
+
+section#contact ul li a {
+    display: block;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    max-width: 300px;
+    background-color: rgba(255,255,255,0);
+    border: 2px solid black;
+    color: black;
+    padding: 10px 20px;
+    transition: all ease .1s;
+    cursor: pointer;
+}
+section#contact ul li a:hover {
+    background-color: rgba(0,0,0,1);
+    color: white;
+}
+section#contact #google-container{
+    height: 300px;
+    width: 100%;
+    border: 2px solid black;
+    overflow: hidden;
+    position: relative;
+}
+
+section#contact #google-container img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+.horizontal-list-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.horizontal-list-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.horizontal-list-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.bg-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
