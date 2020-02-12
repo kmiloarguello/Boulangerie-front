@@ -9,7 +9,7 @@ import { PastrieService } from './service/pastrie-service.service';
 import { PastrieIdComponent } from './pastrie-id/pastrie-id.component';
 import { PastrieNewComponent } from './pastrie-new/pastrie-new.component';
 import { PastrieHomeComponent } from './pastrie-home/pastrie-home.component';
-
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 const routes: Routes = [
   { path: '', component: PastrieHomeComponent },
   { path: 'pastries', component: PastrieListComponent },
@@ -29,7 +29,8 @@ const routes: Routes = [
     BrowserModule,
     RouterModule.forRoot(routes),
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    SlickCarouselModule
   ],
   providers: [PastrieService],
   bootstrap: [AppComponent]

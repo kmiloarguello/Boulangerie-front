@@ -31,7 +31,7 @@ export class PastrieService {
 
   public getPastrieByType(type: string){
     const url = `${this.pastriesUrl}/type/${type}`;
-    return this.http.get<Pastrie>(url);
+    return this.http.get<Pastrie[]>(url);
   }
 
   public removePastrieById(id: number){

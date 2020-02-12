@@ -21,6 +21,7 @@
   
   body {
     font-family: "Roboto", Arial;
+    overflow-x: hidden;
   }
   
   .button{
@@ -59,3 +60,58 @@
   height: auto;
   z-index: -1;
 }
+
+/* Section CONTACT */
+section#contact{
+  position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 50px;
+  grid-gap: 20px;
+  left: -10%;
+  width: 120%;
+  background-color: black;
+}
+
+section#contact ul{
+  list-style: none;
+  align-self: center;
+  grid-gap: 5px;
+  justify-self: end;
+}
+
+section#contact ul li a {
+  display: block;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  max-width: 300px;
+  background-color: rgba(255,255,255,0);
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  transition: all ease .1s;
+  cursor: pointer;
+}
+section#contact ul li a:hover {
+  background-color: rgba(0,0,0,1);
+  color: white;
+}
+section#contact #google-container{
+  height: 300px;
+  width: 100%;
+  border: 2px solid black;
+  overflow: hidden;
+  position: relative;
+}
+
+section#contact #google-container img{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+

@@ -1,6 +1,24 @@
 <div class="container">
-  
-  <img width="100" id="logo-boulangerie" src="assets/logo.png" alt="Logo Boulangerie">
+
+  <nav id="menu-boulangerie">
+    <img id="logo-boulangerie" src="assets/logo.png" alt="Logo Boulangerie" />
+    <ul id="main-menu" class="horizontal-list-4">
+      <li>
+        <a routerLink="/">Accueil</a>
+      </li>
+      <li>
+        <a routerLink="#how">A propos</a>
+      </li>
+      <li>
+        <a routerLink="/pastries">Découvrir</a>
+      </li>
+      <li>
+        <a routerLink="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <hr>
+
   <div class="line-sup"></div>
   <div class="card-section">
     <div class="body-card">
@@ -18,4 +36,21 @@
       <!-- <a class="button" routerLink="/pastries/new">Ajouter un produit</a> -->
     </div>
   </div>
+
+  <section id="contact">
+    <ul class="horizontal-list-3">
+      <li>
+        <a>Facebook</a>
+      </li>
+      <li>
+        <a>Instagram</a>
+      </li>
+      <li>
+        <a>Twitter</a>
+      </li>
+    </ul>
+    <div id="google-container">
+      <img src="assets/maps.jpg" />
+    </div>
+  </section>
 </div>

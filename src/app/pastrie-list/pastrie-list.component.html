@@ -20,21 +20,88 @@
 
   <div class="card-section">
     <div class="head-card">
-      <h3>Notre menu</h3>
+      <h3>Pâtisserie</h3>
+      <img class="bg-section-head" src="assets/patisserie/patisserie_port2.jpg" />
     </div>
     <div class="body-card">
-      <ul class="list-pastries">
-        <li *ngFor="let pastrie of pastries">
-          <img class="thumb-pastrie" src={{pastrie.image}} alt={{pastrie.name}} />
+      <ngx-slick-carousel #slickModal="slick-carousel" [config]="slideConfig" class="list-pastries carousel">
+        <li ngxSlickItem *ngFor="let pastrie of pastries">
+          <div class="container-thumb">
+            <img class="thumb-pastrie" src={{pastrie.image}} alt={{pastrie.name}} />
+          </div>
           <p class="product-name">{{ pastrie.name  | uppercase }}</p>
           <p class="product-price">{{ pastrie.price }} €</p>
-          <a id="add-product" class="plus" routerLink="/pastries/{{pastrie.id}}">En savoir plus</a>
-          <a id="remove-product" class="moins" (click)="removePastrieById(pastrie.id)"><img src="assets/trash.svg" alt="Remove item" /></a>
+          <div class="product-options">
+            <a id="details-product" class="plus" routerLink="/pastries/{{pastrie.id}}">En savoir plus</a>
+            <a id="remove-product" class="moins" (click)="removePastrieById(pastrie.id)"><img src="assets/trash.svg" alt="Remove item" /></a>
+          </div>
         </li>
-      </ul>
+      </ngx-slick-carousel>
     </div>
+
+    <hr class="list-separator">
+
+    <div class="head-card">
+      <h3>Biscuits</h3>
+      <img class="bg-section-head" src="assets/biscuits/biscuits_port.jpg" />
+    </div>
+    <div class="body-card">
+      <ngx-slick-carousel #slickModal="slick-carousel" [config]="slideConfig" class="list-pastries carousel">
+        <li ngxSlickItem *ngFor="let biscuit of biscuits">
+          <div class="container-thumb">
+            <img class="thumb-pastrie" src={{biscuit.image}} alt={{biscuit.name}} />
+          </div>
+          <p class="product-name">{{ biscuit.name  | uppercase }}</p>
+          <p class="product-price">{{ biscuit.price }} €</p>
+          <div class="product-options">
+            <a id="details-product" class="plus" routerLink="/pastries/{{biscuit.id}}">En savoir plus</a>
+            <a id="remove-product" class="moins" (click)="removePastrieById(biscuit.id)"><img src="assets/trash.svg" alt="Remove item" /></a>
+          </div>
+        </li>
+      </ngx-slick-carousel>
+    </div>
+
+    <hr class="list-separator">
+
+    <div class="head-card">
+      <h3>Pains</h3>
+      <img class="bg-section-head" src="assets/pains/pains_port.jpg" />
+    </div>
+    <div class="body-card">
+      <ngx-slick-carousel #slickModal="slick-carousel" [config]="slideConfig" class="list-pastries carousel">
+        <li ngxSlickItem *ngFor="let pain of pains">
+          <div class="container-thumb">
+            <img class="thumb-pastrie" src={{pain.image}} alt={{pain.name}} />
+          </div>
+          <p class="product-name">{{ pain.name  | uppercase }}</p>
+          <p class="product-price">{{ pain.price }} €</p>
+          <div class="product-options">
+            <a id="details-product" class="plus" routerLink="/pastries/{{pain.id}}">En savoir plus</a>
+            <a id="remove-product" class="moins" (click)="removePastrieById(pain.id)"><img src="assets/trash.svg" alt="Remove item" /></a>
+          </div>
+        </li>
+      </ngx-slick-carousel>
+    </div>
+
     <div class="bottom-card">
       <a class="button" routerLink="/pastries/new">Ajouter un produit</a>
     </div>
+
+    <section id="contact">
+      <ul class="horizontal-list-3">
+        <li>
+          <a>Facebook</a>
+        </li>
+        <li>
+          <a>Instagram</a>
+        </li>
+        <li>
+          <a>Twitter</a>
+        </li>
+      </ul>
+      <div id="google-container">
+        <img src="assets/maps.jpg" />
+      </div>
+    </section>
   </div>
 </div>
