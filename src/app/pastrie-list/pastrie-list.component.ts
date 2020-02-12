@@ -26,5 +26,5 @@ export class PastrieListComponent implements OnInit {
         this.ngOnInit();
       })
   }
-
+  
 }

@@ -265,23 +265,3 @@ section#contact #google-container img{
 
 
 
-.horizontal-list-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.horizontal-list-3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-.horizontal-list-4 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.bg-section {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  z-index: -1;
-}

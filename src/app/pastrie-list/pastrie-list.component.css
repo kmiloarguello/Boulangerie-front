@@ -1,12 +1,43 @@
-.container{
+.container {
+    width: 90%;
+    display: block;
+    margin: auto;
+    position: relative;
+  }
+  
+  nav#menu-boulangerie {
     display: grid;
-    justify-items: center;
-    align-items: center;
-    height: 100vh;
-}
+    grid-template-columns: 100px 1fr;
+  }
+  
+  nav#menu-boulangerie #logo-boulangerie {
+    width: 100%;
+    height: auto;
+  }
+  
+  nav#menu-boulangerie #main-menu {
+    text-decoration: none;
+    margin: 0;
+    list-style: none;
+  }
+  
+  #main-menu li {
+    align-self: center;
+    justify-self: center;
+  }
+  
+  #main-menu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+  }
+  #main-menu li a:hover{
+      text-decoration: overline;
+  }
+  
 
 .card-section{
-    width: 70%;
+    width: 100%;
     height: auto;
     background-color: var(--lightColor);
 }
