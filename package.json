@@ -24,7 +24,7 @@
     "core-js": "^2.5.4",
     "express": "^4.17.1",
     "flickity": "^2.2.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "ngx-slick-carousel": "^0.4.7",
     "path": "^0.12.7",
     "rxjs": "~6.2.0",
